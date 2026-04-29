@@ -92,7 +92,7 @@ const LogoMark = ({ compact = false }: { compact?: boolean }) => (
   <img
     src={threxaLogo}
     alt="Threxa — Beyond Limits"
-    className={compact ? "h-8 w-auto object-contain" : "h-12 w-auto object-contain md:h-14"}
+    className={compact ? "h-9 w-auto object-contain" : "h-16 w-auto object-contain md:h-20"}
   />
 );
 
@@ -218,17 +218,17 @@ const WorkflowVisual = ({ type }: { type: string }) => {
 const ThrexaLanding = () => {
   return (
     <main className="min-h-screen overflow-hidden bg-background text-foreground noise">
-      <header className="sticky top-0 z-40 border-b border-line bg-background/88 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-violet-soft/10 bg-secondary/95 backdrop-blur-xl">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 md:px-8">
-          <a href="#top" className="flex items-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background">
+          <a href="#top" className="flex items-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-secondary">
             <LogoMark compact />
           </a>
-          <div className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground md:flex">
+          <div className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-secondary-foreground/62 md:flex">
             <a className="transition-colors hover:text-primary" href="#problem">Problem</a>
             <a className="transition-colors hover:text-primary" href="#workflows">Workflows</a>
             <a className="transition-colors hover:text-primary" href="#pricing">Pricing</a>
           </div>
-          <a href="#final" className="group inline-flex items-center gap-2 rounded-full bg-secondary px-4 py-2 text-xs font-semibold text-secondary-foreground transition-transform duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-background">
+          <a href="#final" className="group inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-semibold text-primary-foreground transition-transform duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-secondary">
             Book a free audit <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
           </a>
         </nav>
@@ -237,7 +237,7 @@ const ThrexaLanding = () => {
       <section id="top" className="relative mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl place-items-center px-5 pb-24 pt-16 text-center md:px-8">
         <div className="absolute left-1/2 top-28 h-40 w-40 -translate-x-1/2 rounded-full border border-violet-soft/45 opacity-50 animate-orbit md:h-64 md:w-64" aria-hidden="true" />
         <div className="relative z-10 flex w-full flex-col items-center">
-          <div className="mb-9 flex w-full justify-center animate-reveal">
+          <div className="mb-9 flex w-full justify-center rounded-lg bg-secondary px-6 py-5 shadow-panel ring-1 ring-violet-soft/15 animate-reveal sm:w-auto">
             <LogoMark />
           </div>
           <p className="mb-6 text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-primary animate-reveal">// workflow automation for Indian D2C</p>
