@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,26 +10,45 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 42 24% 96%;
+    --foreground: 248 18% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 36% 99%;
+    --card-foreground: 248 18% 10%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 36% 99%;
+    --popover-foreground: 248 18% 10%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 258 96% 64%;
+    --primary-foreground: 40 36% 99%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 252 38% 14%;
+    --secondary-foreground: 40 36% 96%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 38 18% 91%;
+    --muted-foreground: 252 8% 48%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 263 100% 68%;
+    --accent-foreground: 40 36% 99%;
+
+    --cream: 42 24% 96%;
+    --cream-lift: 40 38% 99%;
+    --ink: 248 18% 10%;
+    --ink-soft: 252 8% 42%;
+    --space: 252 38% 12%;
+    --space-lift: 253 33% 18%;
+    --violet: 258 96% 64%;
+    --violet-soft: 259 100% 88%;
+    --line: 42 14% 84%;
+    --success: 140 58% 45%;
+    --warning: 28 88% 58%;
+    --glow: 258 96% 64%;
+
+    --gradient-brand: linear-gradient(135deg, hsl(238 100% 60%), hsl(265 100% 66%) 52%, hsl(280 100% 70%));
+    --gradient-panel: radial-gradient(circle at 20% 0%, hsl(258 96% 64% / 0.24), transparent 34%), linear-gradient(145deg, hsl(var(--space)), hsl(var(--space-lift)));
+    --shadow-panel: 0 30px 90px -42px hsl(var(--space) / 0.7);
+    --shadow-violet: 0 22px 55px -34px hsl(var(--glow) / 0.75);
+    --radius: 0.5rem;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -35,8 +56,6 @@ All colors MUST be HSL.
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +120,31 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: theme('fontFamily.sans');
+    letter-spacing: 0;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: theme('fontFamily.display');
+    letter-spacing: 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-display-italic {
+    font-family: theme('fontFamily.display');
+    font-style: italic;
+  }
+
+  .noise {
+    background-image: radial-gradient(hsl(var(--foreground) / 0.045) 0.7px, transparent 0.7px);
+    background-size: 18px 18px;
   }
 }
