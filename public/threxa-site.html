@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Threxa — Beyond Limits</title>
+<meta name="description" content="Workflow automation infrastructure for Indian D2C brands. Stop doing data entry. Start counting the money." />
+<meta property="og:title" content="Threxa — Beyond Limits" />
+<meta property="og:description" content="Workflow automation infrastructure for Indian D2C brands." />
+<link rel="icon" type="image/png" href="data:image/png;base64,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" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=DM+Sans:opsz,wght@9..40,300..700&family=JetBrains+Mono:wght@400;500&family=Saira:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+  body {
+    background: #FAFAF7;
+    color: #0A0A0F;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    letter-spacing: -0.005em;
+    overflow-x: hidden;
+  }
+  ::selection { background: #0A0A0F; color: #FAFAF7; }
+
+  /* TYPOGRAPHY */
+  .display {
+    font-family: 'Fraunces', serif;
+    font-weight: 350;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    letter-spacing: -0.035em;
+    line-height: 0.95;
+  }
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  /* CONTAINERS */
+  .container { max-width: 1320px; margin: 0 auto; padding: 0 32px; }
+  .container-narrow { max-width: 980px; margin: 0 auto; padding: 0 32px; }
+  .container-wide { max-width: 1480px; margin: 0 auto; padding: 0 32px; }
+
+  /* NAV — minimal, sticky, blur on scroll */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 14px 0;
+    background: rgba(12, 10, 20, 0.92);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    transition: padding 0.3s ease;
+  }
+  .nav-inner {
+    max-width: 1320px; margin: 0 auto; padding: 0 32px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo-mark {
+    display: flex; align-items: center;
+    text-decoration: none;
+  }
+  .logo-card {
+    background: #0A0A0F;
+    border-radius: 14px;
+    padding: 12px 22px 12px 18px;
+    display: inline-flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px -10px rgba(10, 10, 15, 0.25);
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .logo-card::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(123, 77, 246, 0.18) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .logo-card-img {
+    height: 44px; width: auto;
+    display: block;
+    position: relative; z-index: 1;
+  }
+  .logo-mark:hover .logo-card {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 32px -8px rgba(123, 77, 246, 0.35);
+  }
+  .logo-card-footer {
+    padding: 16px 28px 16px 22px;
+    border-radius: 18px;
+  }
+  .logo-card-footer .logo-card-img {
+    height: 56px;
+  }
+  @media (max-width: 600px) {
+    .logo-card { padding: 10px 16px 10px 14px; }
+    .logo-card-img { height: 36px; }
+  }
+
+  /* HERO — Apple-grand, full-bleed, dramatic */
+  .hero {
+    padding: 200px 0 120px;
+    position: relative;
+    text-align: center;
+  }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 13px; font-weight: 500;
+    color: rgba(10, 10, 15, 0.6);
+    letter-spacing: 0.04em;
+    margin-bottom: 48px;
+    opacity: 0; animation: fadeUp 0.8s 0.1s forwards;
+  }
+  .hero-eyebrow-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #7B4DF6; animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 0.4 } 50% { opacity: 1 } }
+
+  .hero h1 {
+    font-size: clamp(56px, 11vw, 156px);
+    margin-bottom: 32px;
+    opacity: 0; animation: fadeUp 1s 0.25s forwards;
+  }
+  .hero h1 em {
+    font-style: italic;
+    background: linear-gradient(135deg, #7B4DF6 0%, #A47AFF 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-sub {
+    max-width: 620px; margin: 0 auto 56px;
+    font-size: clamp(18px, 1.6vw, 22px);
+    color: rgba(10, 10, 15, 0.62);
+    font-weight: 400; line-height: 1.45;
+    opacity: 0; animation: fadeUp 1s 0.4s forwards;
+  }
+  .hero-ctas {
+    display: inline-flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+    opacity: 0; animation: fadeUp 1s 0.55s forwards;
+  }
+  .btn-primary {
+    background: #0A0A0F; color: #FAFAF7;
+    padding: 17px 32px; border-radius: 999px;
+    font-size: 15px; font-weight: 500;
+    text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all 0.25s ease;
+  }
+  .btn-primary:hover { background: #2A2540; transform: translateY(-2px); box-shadow: 0 12px 30px -10px rgba(10,10,15,0.3); }
+  .btn-primary .arrow { transition: transform 0.3s; }
+  .btn-primary:hover .arrow { transform: translateX(3px); }
+  .btn-secondary {
+    background: transparent; color: #0A0A0F;
+    padding: 17px 32px; border-radius: 999px;
+    font-size: 15px; font-weight: 500;
+    text-decoration: none;
+    border: 1px solid rgba(10, 10, 15, 0.15);
+    display: inline-flex; align-items: center; gap: 8px;
+    transition: all 0.25s ease;
+  }
+  .btn-secondary:hover { border-color: #0A0A0F; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* HERO SHOWCASE — the hero image / product moment */
+  .hero-showcase {
+    margin-top: 100px;
+    padding: 0 32px;
+    opacity: 0; animation: fadeUp 1.2s 0.7s forwards;
+  }
+  .showcase-frame {
+    max-width: 1280px; margin: 0 auto;
+    background: linear-gradient(180deg, #1A1628 0%, #0F0B1F 100%);
+    border-radius: 32px;
+    padding: 56px;
+    box-shadow: 0 60px 120px -40px rgba(123, 77, 246, 0.15),
+                0 30px 60px -20px rgba(10, 10, 15, 0.15);
+    position: relative;
+    overflow: hidden;
+  }
+  .showcase-frame::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 20% 0%, rgba(123, 77, 246, 0.18) 0%, transparent 50%),
+                radial-gradient(circle at 80% 100%, rgba(164, 122, 255, 0.12) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .showcase-grid {
+    position: relative; z-index: 1;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+    align-items: stretch;
+  }
+  .showcase-card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 32px;
+    color: #FAFAF7;
+    display: flex; flex-direction: column; justify-content: space-between;
+    min-height: 280px;
+  }
+  .showcase-card-tag {
+    font-size: 11px; font-weight: 500; letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #A47AFF;
+    margin-bottom: 14px;
+  }
+  .showcase-card-headline {
+    font-family: 'Fraunces', serif; font-weight: 350;
+    font-size: 38px; line-height: 1.05; letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  .showcase-card-body {
+    font-size: 14px; color: rgba(250,250,247,0.6); line-height: 1.5;
+  }
+  .showcase-card-stats {
+    display: flex; gap: 32px; margin-top: 24px; padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .stat-mini { font-size: 13px; }
+  .stat-mini-num { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 400; color: #FAFAF7; line-height: 1; }
+  .stat-mini-lbl { color: rgba(250,250,247,0.55); font-size: 11px; margin-top: 4px; letter-spacing: 0.04em; }
+
+  .live-flow {
+    background: linear-gradient(135deg, rgba(123,77,246,0.1) 0%, rgba(164,122,255,0.05) 100%);
+    border: 1px solid rgba(123,77,246,0.2);
+    border-radius: 20px;
+    padding: 28px;
+    color: #FAFAF7;
+    position: relative;
+  }
+  .flow-status {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 24px;
+  }
+  .flow-status-left { display: flex; align-items: center; gap: 8px; }
+  .flow-dot {
+    width: 8px; height: 8px; border-radius: 50%; background: #A47AFF;
+    animation: pulse 2s ease-in-out infinite;
+    box-shadow: 0 0 12px rgba(164,122,255,0.6);
+  }
+  .flow-status-text { font-size: 11px; letter-spacing: 0.12em; color: rgba(250,250,247,0.7); }
+  .flow-time { font-size: 11px; color: rgba(250,250,247,0.5); }
+
+  .flow-node {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 8px;
+    display: flex; align-items: center; gap: 14px;
+    transition: all 0.3s;
+  }
+  .flow-node-active { border-color: rgba(164,122,255,0.4); background: rgba(123,77,246,0.08); }
+  .flow-node-icon {
+    width: 32px; height: 32px; border-radius: 8px;
+    background: linear-gradient(135deg, #7B4DF6, #A47AFF);
+    display: flex; align-items: center; justify-content: center;
+    color: #FAFAF7; font-size: 13px; font-weight: 600;
+    flex-shrink: 0;
+  }
+  .flow-node-text { flex: 1; }
+  .flow-node-name { font-size: 13px; font-weight: 500; color: #FAFAF7; }
+  .flow-node-status { font-size: 11px; color: rgba(250,250,247,0.5); margin-top: 2px; }
+  .flow-connector { width: 1px; height: 12px; background: rgba(164,122,255,0.3); margin: 0 0 0 32px; }
+
+  /* SECTIONS — generous Apple breathing */
+  section { padding: 180px 0; position: relative; }
+
+  /* Section labels */
+  .label-row {
+    display: flex; align-items: center; gap: 14px; margin-bottom: 32px;
+    font-size: 12px; font-weight: 500; letter-spacing: 0.18em;
+    color: #7B4DF6; text-transform: uppercase;
+  }
+  .label-row::before {
+    content: ''; width: 28px; height: 1px; background: #7B4DF6;
+  }
+
+  /* Big Statement Section */
+  .statement { text-align: center; padding: 200px 0; }
+  .statement h2 {
+    font-size: clamp(40px, 7vw, 96px);
+    max-width: 1100px; margin: 0 auto 48px;
+  }
+  .statement h2 em { color: #7B4DF6; font-style: italic; }
+  .statement-sub {
+    max-width: 620px; margin: 0 auto;
+    font-size: clamp(17px, 1.4vw, 19px);
+    color: rgba(10,10,15,0.62);
+  }
+
+  /* The Problem Section — 3 visual moments */
+  .problems { padding: 180px 0; background: #F2F1ED; }
+  .problems-header { text-align: center; margin-bottom: 100px; }
+  .problems-header h2 {
+    font-size: clamp(40px, 6.5vw, 84px);
+    max-width: 1000px; margin: 0 auto 32px;
+  }
+  .problems-header em { color: #7B4DF6; font-style: italic; }
+  .problems-header p { color: rgba(10,10,15,0.6); max-width: 580px; margin: 0 auto; font-size: 18px; }
+
+  .problems-stack { display: flex; flex-direction: column; gap: 120px; }
+  .problem-row {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+  .problem-row:nth-child(even) { direction: rtl; }
+  .problem-row:nth-child(even) > * { direction: ltr; }
+
+  .problem-text-num {
+    font-family: 'Fraunces', serif; font-weight: 300;
+    font-size: 96px; line-height: 1; color: rgba(123,77,246,0.18);
+    margin-bottom: 24px;
+  }
+  .problem-text h3 {
+    font-family: 'Fraunces', serif; font-weight: 350;
+    font-size: clamp(36px, 4.5vw, 56px); line-height: 1.05; letter-spacing: -0.025em;
+    margin-bottom: 24px;
+  }
+  .problem-text p {
+    font-size: 18px; color: rgba(10,10,15,0.62); line-height: 1.55;
+    max-width: 480px; margin-bottom: 36px;
+  }
+  .problem-impact {
+    display: inline-flex; align-items: center; gap: 12px;
+    padding: 12px 22px; border-radius: 999px;
+    background: rgba(123,77,246,0.08);
+    border: 1px solid rgba(123,77,246,0.18);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: #5734D8;
+    font-weight: 500;
+  }
+
+  .problem-visual {
+    aspect-ratio: 1.1/1;
+    border-radius: 28px;
+    background: #FFFFFF;
+    border: 1px solid rgba(10,10,15,0.06);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 30px 80px -30px rgba(10,10,15,0.12);
+    padding: 48px;
+    display: flex; flex-direction: column; justify-content: center;
+  }
+  .visual-overload {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F5F3FF 100%);
+  }
+  .visual-cart {
+    background: linear-gradient(135deg, #1A1628 0%, #2A2540 100%);
+    color: #FAFAF7;
+  }
+  .visual-reviews {
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFF5F0 100%);
+  }
+
+  /* Tab stack visual for problem 1 */
+  .tab-stack { position: relative; height: 100%; }
+  .tab-item {
+    position: absolute; left: 0; right: 0;
+    background: #fff; border: 1px solid rgba(10,10,15,0.08);
+    border-radius: 12px; padding: 14px 18px;
+    box-shadow: 0 8px 20px -8px rgba(10,10,15,0.08);
+    display: flex; align-items: center; gap: 12px;
+    font-size: 13px;
+    transition: transform 0.5s;
+  }
+  .tab-item:hover { transform: translateX(8px); }
+  .tab-icon {
+    width: 24px; height: 24px; border-radius: 6px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 600; color: #fff;
+  }
+  .tab-item-1 { top: 0; transform: rotate(-2deg); }
+  .tab-item-2 { top: 50px; transform: rotate(1deg); }
+  .tab-item-3 { top: 100px; transform: rotate(-1.5deg); }
+  .tab-item-4 { top: 150px; transform: rotate(2deg); }
+  .tab-item-5 { top: 200px; transform: rotate(-0.5deg); }
+
+  /* Cart escape visual */
+  .cart-escape { position: relative; height: 100%; }
+  .cart-icon {
+    position: absolute; font-size: 36px;
+    animation: drift 8s ease-in-out infinite;
+  }
+  @keyframes drift {
+    0%, 100% { transform: translate(0,0); opacity: 0.7; }
+    50% { transform: translate(40px,-30px); opacity: 0.3; }
+  }
+  .cart-1 { top: 20%; left: 15%; }
+  .cart-2 { top: 35%; right: 20%; animation-delay: -2s; }
+  .cart-3 { bottom: 40%; left: 35%; animation-delay: -4s; }
+  .cart-4 { bottom: 20%; right: 30%; animation-delay: -6s; }
+
+  .cart-counter {
+    text-align: center; position: relative; z-index: 2;
+  }
+  .cart-counter-num {
+    font-family: 'Fraunces', serif; font-weight: 350;
+    font-size: 96px; line-height: 1; letter-spacing: -0.04em;
+    background: linear-gradient(135deg, #A47AFF 0%, #7B4DF6 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .cart-counter-label {
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(250,250,247,0.5); margin-top: 16px;
+  }
+
+  /* Reviews visual */
+  .review-bubbles { display: flex; flex-direction: column; gap: 14px; }
+  .review-bubble {
+    background: #fff; border: 1px solid rgba(10,10,15,0.06);
+    border-radius: 14px; padding: 16px 20px;
+    display: flex; align-items: flex-start; gap: 14px;
+    box-shadow: 0 4px 12px -4px rgba(10,10,15,0.04);
+  }
+  .review-bubble-empty {
+    background: rgba(10,10,15,0.02);
+    border: 1px dashed rgba(10,10,15,0.15);
+    color: rgba(10,10,15,0.4);
+    font-style: italic;
+    text-align: center; padding: 14px;
+    font-size: 13px;
+  }
+  .review-stars { color: #FFB800; font-size: 14px; }
+  .review-stars-faded { color: rgba(10,10,15,0.15); font-size: 14px; }
+  .review-text { font-size: 13px; line-height: 1.5; color: rgba(10,10,15,0.7); }
+  .review-name { font-size: 11px; color: rgba(10,10,15,0.5); margin-top: 4px; font-weight: 500; }
+
+  /* SOLUTION SECTION */
+  .solution-hero { text-align: center; padding: 0 0 80px; }
+  .solution-hero h2 {
+    font-size: clamp(48px, 8vw, 112px);
+    max-width: 1200px; margin: 0 auto 40px;
+  }
+  .solution-hero em { color: #7B4DF6; font-style: italic; }
+
+  .solutions { display: flex; flex-direction: column; gap: 0; margin-top: 0; }
+  .solution-row {
+    padding: 140px 0;
+    border-top: 1px solid rgba(10,10,15,0.08);
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  }
+  .solution-row:nth-child(even) { direction: rtl; }
+  .solution-row:nth-child(even) > * { direction: ltr; }
+
+  .solution-meta-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; color: #7B4DF6; letter-spacing: 0.1em;
+    margin-bottom: 18px;
+  }
+  .solution-meta h3 {
+    font-family: 'Fraunces', serif; font-weight: 350;
+    font-size: clamp(40px, 5vw, 64px); line-height: 1.0; letter-spacing: -0.025em;
+    margin-bottom: 28px;
+  }
+  .solution-meta h3 em { color: #7B4DF6; font-style: italic; }
+  .solution-meta-desc {
+    font-size: 18px; color: rgba(10,10,15,0.62); line-height: 1.55;
+    max-width: 480px; margin-bottom: 36px;
+  }
+  .tool-row { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tool-pill {
+    padding: 7px 14px; border-radius: 999px;
+    background: rgba(10,10,15,0.04);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: rgba(10,10,15,0.7);
+    letter-spacing: 0.04em;
+  }
+
+  .solution-visual {
+    aspect-ratio: 1.1/1;
+    border-radius: 28px;
+    background: linear-gradient(180deg, #1A1628 0%, #0F0B1F 100%);
+    box-shadow: 0 30px 80px -30px rgba(10,10,15,0.2);
+    padding: 40px;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; overflow: hidden;
+  }
+  .solution-visual::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 20%, rgba(123,77,246,0.15) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  /* PRICING — clean Apple cards */
+  .pricing { padding: 180px 0; background: #F2F1ED; }
+  .pricing-header { text-align: center; margin-bottom: 100px; }
+  .pricing-header h2 {
+    font-size: clamp(48px, 7vw, 96px);
+    max-width: 1000px; margin: 0 auto 32px;
+  }
+  .pricing-header em { color: #7B4DF6; font-style: italic; }
+  .pricing-header p { font-size: 18px; color: rgba(10,10,15,0.6); max-width: 580px; margin: 0 auto; }
+
+  .price-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+    max-width: 1280px; margin: 0 auto;
+  }
+  .price-card {
+    background: #FFFFFF;
+    border-radius: 28px;
+    padding: 48px 40px;
+    border: 1px solid rgba(10,10,15,0.06);
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  .price-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px -20px rgba(10,10,15,0.12);
+  }
+  .price-card.featured {
+    background: linear-gradient(180deg, #1A1628 0%, #0A0A0F 100%);
+    color: #FAFAF7;
+    border-color: transparent;
+    box-shadow: 0 20px 40px -10px rgba(123,77,246,0.2);
+  }
+  .price-card.featured:hover {
+    box-shadow: 0 40px 80px -10px rgba(123,77,246,0.3);
+  }
+  .price-badge {
+    position: absolute; top: -14px; left: 40px;
+    background: #7B4DF6; color: #FFF;
+    padding: 6px 16px; border-radius: 999px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; font-weight: 500; letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .price-tier {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #7B4DF6;
+    margin-bottom: 24px;
+  }
+  .price-card.featured .price-tier { color: #A47AFF; }
+  .price-amount {
+    font-family: 'Fraunces', serif; font-weight: 350;
+    font-size: 64px; line-height: 1;
+    letter-spacing: -0.03em;
+    margin-bottom: 4px;
+  }
+  .price-card.featured .price-amount {
+    background: linear-gradient(135deg, #FAFAF7 0%, #C4B8FF 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .price-suffix {
+    font-size: 14px; color: rgba(10,10,15,0.5);
+    font-family: 'DM Sans', sans-serif; font-weight: 400;
+  }
+  .price-card.featured .price-suffix { color: rgba(250,250,247,0.5); }
+  .price-monthly {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px; color: #7B4DF6; margin-top: 8px;
+  }
+  .price-card.featured .price-monthly { color: #A47AFF; }
+  .price-tagline {
+    font-style: italic; font-size: 15px;
+    color: rgba(10,10,15,0.55); margin-top: 18px; margin-bottom: 32px;
+  }
+  .price-card.featured .price-tagline { color: rgba(250,250,247,0.6); }
+  .price-feats {
+    list-style: none; padding-top: 32px;
+    border-top: 1px solid rgba(10,10,15,0.08);
+  }
+  .price-card.featured .price-feats { border-color: rgba(250,250,247,0.12); }
+  .price-feats li {
+    display: flex; gap: 12px; padding: 10px 0;
+    font-size: 15px; color: rgba(10,10,15,0.85);
+  }
+  .price-card.featured .price-feats li { color: rgba(250,250,247,0.85); }
+  .price-feats li::before {
+    content: '→'; color: #7B4DF6; flex-shrink: 0;
+  }
+  .price-cta {
+    margin-top: 40px; display: block; text-align: center;
+    padding: 14px; border-radius: 999px;
+    border: 1px solid rgba(10,10,15,0.15);
+    color: #0A0A0F; text-decoration: none;
+    font-size: 14px; font-weight: 500;
+    transition: all 0.25s;
+  }
+  .price-cta:hover {
+    background: #0A0A0F; color: #FAFAF7; border-color: #0A0A0F;
+  }
+  .price-card.featured .price-cta {
+    background: #7B4DF6; border-color: #7B4DF6; color: #FFF;
+  }
+  .price-card.featured .price-cta:hover {
+    background: #5734D8; border-color: #5734D8;
+  }
+  .price-note {
+    text-align: center; margin-top: 56px;
+    font-size: 14px; color: rgba(10,10,15,0.5); font-style: italic;
+  }
+
+  /* CTA + FOUNDER */
+  .cta-final {
+    padding: 220px 0;
+    text-align: center;
+    background: linear-gradient(180deg, #FAFAF7 0%, #F2F1ED 100%);
+  }
+  .cta-final h2 {
+    font-size: clamp(56px, 11vw, 156px);
+    margin-bottom: 40px;
+  }
+  .cta-final h2 em { color: #7B4DF6; font-style: italic; }
+  .cta-final p {
+    max-width: 540px; margin: 0 auto 56px;
+    font-size: 19px; color: rgba(10,10,15,0.62);
+  }
+  .cta-final .btn-primary { padding: 22px 44px; font-size: 16px; }
+
+  .founder {
+    margin-top: 160px; padding-top: 80px;
+    max-width: 720px; margin-left: auto; margin-right: auto;
+    border-top: 1px solid rgba(10,10,15,0.08);
+    text-align: left;
+    display: grid; grid-template-columns: 80px 1fr; gap: 32px;
+    align-items: flex-start;
+  }
+  .founder-avatar {
+    width: 72px; height: 72px; border-radius: 50%;
+    background: linear-gradient(135deg, #7B4DF6, #A47AFF);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Fraunces', serif; font-weight: 400;
+    font-size: 32px; color: #FAFAF7;
+  }
+  .founder-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; color: rgba(10,10,15,0.5);
+    letter-spacing: 0.18em; text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .founder-text { font-size: 17px; line-height: 1.65; color: rgba(10,10,15,0.85); }
+
+  /* FOOTER */
+  footer {
+    padding: 80px 0 40px;
+    background: #F2F1ED; color: #0A0A0F;
+    border-top: 1px solid rgba(10,10,15,0.08);
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 48px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(10,10,15,0.08);
+  }
+  .footer-brand p {
+    margin-top: 24px; font-size: 14px;
+    color: rgba(10,10,15,0.6); max-width: 280px;
+    line-height: 1.6;
+  }
+  .footer-col h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(10,10,15,0.5);
+    margin-bottom: 18px;
+  }
+  .footer-col a {
+    display: block; padding: 6px 0;
+    color: rgba(10,10,15,0.75); font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: #7B4DF6; }
+  .footer-bottom {
+    padding-top: 32px;
+    display: flex; justify-content: space-between;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; color: rgba(10,10,15,0.5);
+  }
+
+  /* SCROLL REVEALS */
+  .reveal {
+    opacity: 0; transform: translateY(40px);
+    transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  /* RESPONSIVE */
+  @media (max-width: 968px) {
+    .nav-menu a:not(.nav-cta) { display: none; }
+    .logo-mark img { height: 32px !important; }
+    .hero { padding: 140px 0 80px; }
+    section, .problems, .pricing { padding: 100px 0; }
+    .problem-row, .solution-row, .showcase-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+    .problem-row:nth-child(even), .solution-row:nth-child(even) { direction: ltr; }
+    .price-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+    .showcase-frame { padding: 28px; }
+    .founder { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo-mark">
+      <div class="logo-card">
+        <img src="/threxa-logo.png" alt="Threxa — Beyond Limits" class="logo-card-img" />
+      </div>
+    </a>
+    <div class="nav-menu">
+      <a href="#problem">The Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#book" class="nav-cta">Book demo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container-narrow">
+    <div class="hero-eyebrow">
+      <span class="hero-eyebrow-dot"></span>
+      <span>Workflow automation for Indian D2C</span>
+    </div>
+    <h1 class="display">Beyond <em>limits.</em></h1>
+    <p class="hero-sub">Threxa builds automation systems for Shopify D2C brands. Order processing, customer messages, cart recovery, reviews — all handled, all running, all the time.</p>
+    <div class="hero-ctas">
+      <a href="#book" class="btn-primary">Book a free audit <span class="arrow">→</span></a>
+      <a href="#solution" class="btn-secondary">See how it works</a>
+    </div>
+  </div>
+
+  <div class="hero-showcase">
+    <div class="showcase-frame">
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div>
+            <div class="showcase-card-tag">// Live workflow</div>
+            <div class="showcase-card-headline">Your store. Running itself.</div>
+            <div class="showcase-card-body">An order comes in. Within 3 seconds, it's logged, the customer's notified, the team's alerted, the invoice is generated, the shipping label is printed. Nobody touches a thing.</div>
+          </div>
+          <div class="showcase-card-stats">
+            <div class="stat-mini">
+              <div class="stat-mini-num">3<span style="font-size:18px;color:rgba(250,250,247,0.5);">s</span></div>
+              <div class="stat-mini-lbl">PER ORDER</div>
+            </div>
+            <div class="stat-mini">
+              <div class="stat-mini-num">12<span style="font-size:18px;color:rgba(250,250,247,0.5);">h</span></div>
+              <div class="stat-mini-lbl">SAVED DAILY</div>
+            </div>
+            <div class="stat-mini">
+              <div class="stat-mini-num">99.9<span style="font-size:18px;color:rgba(250,250,247,0.5);">%</span></div>
+              <div class="stat-mini-lbl">UPTIME</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="live-flow">
+          <div class="flow-status">
+            <div class="flow-status-left">
+              <span class="flow-dot"></span>
+              <span class="flow-status-text">FLOW · 001 · LIVE</span>
+            </div>
+            <span class="flow-time">3.2s</span>
+          </div>
+          <div class="flow-node flow-node-active">
+            <div class="flow-node-icon">S</div>
+            <div class="flow-node-text">
+              <div class="flow-node-name">Shopify · Order received</div>
+              <div class="flow-node-status">+ ₹1,499 · Priya M.</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-node flow-node-active">
+            <div class="flow-node-icon">G</div>
+            <div class="flow-node-text">
+              <div class="flow-node-name">Sheets · Logged</div>
+              <div class="flow-node-status">Row #247 written</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-node flow-node-active">
+            <div class="flow-node-icon">W</div>
+            <div class="flow-node-text">
+              <div class="flow-node-name">WhatsApp · Sent</div>
+              <div class="flow-node-status">Customer notified</div>
+            </div>
+          </div>
+          <div class="flow-connector"></div>
+          <div class="flow-node">
+            <div class="flow-node-icon">T</div>
+            <div class="flow-node-text">
+              <div class="flow-node-name">Tally · Invoice</div>
+              <div class="flow-node-status" style="color:#A47AFF;">running...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BIG STATEMENT -->
+<section class="statement reveal">
+  <div class="container-narrow">
+    <h2 class="display">An order comes in.<br/>Then <em>silence.</em><br/>That's the goal.</h2>
+    <p class="statement-sub">No team scrambling. No founder copy-pasting at 11 PM. No customer waiting for an update that never comes. Just a quiet store that works while you sleep.</p>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problems" id="problem">
+  <div class="container">
+    <div class="problems-header reveal">
+      <div class="label-row" style="justify-content: center;">The reality</div>
+      <h2 class="display">Most D2C founders<br/>are <em>drowning</em> in work<br/>that should be invisible.</h2>
+      <p>Twelve hours a day on tasks that ask for nothing creative, nothing strategic — just human attention to keep the lights on.</p>
+    </div>
+
+    <div class="problems-stack">
+      <div class="problem-row reveal">
+        <div class="problem-text">
+          <div class="problem-text-num">01</div>
+          <h3>Every order is a fifteen-minute tax.</h3>
+          <p>Log it to Sheets. Copy it to Tally. Generate the Shiprocket label. Send the WhatsApp confirmation. Notify the team. Repeat fifty times today.</p>
+          <div class="problem-impact">TIME LOST · 12+ hrs daily</div>
+        </div>
+        <div class="problem-visual visual-overload">
+          <div class="tab-stack">
+            <div class="tab-item tab-item-1"><div class="tab-icon" style="background:#96BF48;">S</div>Shopify Admin · Orders</div>
+            <div class="tab-item tab-item-2"><div class="tab-icon" style="background:#0F9D58;">G</div>Google Sheets · Tracker</div>
+            <div class="tab-item tab-item-3"><div class="tab-icon" style="background:#25D366;">W</div>WhatsApp Web · 47 unread</div>
+            <div class="tab-item tab-item-4"><div class="tab-icon" style="background:#FF6F00;">T</div>Tally Prime · Invoice #2891</div>
+            <div class="tab-item tab-item-5"><div class="tab-icon" style="background:#7E22CE;">C</div>Shiprocket · Print labels</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-row reveal">
+        <div class="problem-text">
+          <div class="problem-text-num">02</div>
+          <h3>Seven of every ten carts walk away forever.</h3>
+          <p>The customer added the product. They picked the size. They saw the shipping cost. Then a phone call interrupted them. No one ever followed up. The cart cooled into nothing.</p>
+          <div class="problem-impact">REVENUE VANISHED · ₹4–8L/mo</div>
+        </div>
+        <div class="problem-visual visual-cart">
+          <div class="cart-icon cart-1"><svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="rgba(250,250,247,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
+          <div class="cart-icon cart-2"><svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="rgba(250,250,247,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
+          <div class="cart-icon cart-3"><svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="rgba(250,250,247,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
+          <div class="cart-icon cart-4"><svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="rgba(250,250,247,0.45)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.7 13.4a2 2 0 0 0 2 1.6h9.7a2 2 0 0 0 2-1.6L23 6H6"/></svg></div>
+          <div class="cart-counter">
+            <div class="cart-counter-num">70<span style="font-size:48px;color:rgba(250,250,247,0.4);">%</span></div>
+            <div class="cart-counter-label">ABANDONED · NEVER RETURN</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="problem-row reveal">
+        <div class="problem-text">
+          <div class="problem-text-num">03</div>
+          <h3>The reviews you need never arrive.</h3>
+          <p>Eighty percent of D2C purchases happen because of reviews. Yours go uncollected because no one has the bandwidth to ask. Your best customers stay anonymous.</p>
+          <div class="problem-impact">REVIEWS MISSED · 60% gone</div>
+        </div>
+        <div class="problem-visual visual-reviews">
+          <div class="review-bubbles">
+            <div class="review-bubble">
+              <div>
+                <div class="review-stars">★★★★★</div>
+                <div class="review-text">"Loved the product, fast delivery"</div>
+                <div class="review-name">— Aanya R.</div>
+              </div>
+            </div>
+            <div class="review-bubble-empty">— review never collected —</div>
+            <div class="review-bubble-empty">— review never collected —</div>
+            <div class="review-bubble">
+              <div>
+                <div class="review-stars-faded">★★★★★</div>
+                <div class="review-text" style="color: rgba(10,10,15,0.3);">— review never collected —</div>
+              </div>
+            </div>
+            <div class="review-bubble-empty">— review never collected —</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOLUTION -->
+<section id="solution">
+  <div class="container">
+    <div class="solution-hero reveal">
+      <div class="label-row" style="justify-content: center;">The work</div>
+      <h2 class="display">Three workflows.<br/>That's the <em>whole product.</em></h2>
+    </div>
+
+    <div class="solutions">
+      <div class="solution-row reveal">
+        <div class="solution-meta">
+          <div class="solution-meta-num">// 01 · ORDER TO EVERYTHING</div>
+          <h3>Three seconds.<br/>Five systems.<br/><em>Zero touch.</em></h3>
+          <p class="solution-meta-desc">A customer hits checkout. Threxa fires across your stack — Sheets, Tally, Shiprocket, WhatsApp, your team's group chat — in the time it takes the page to refresh.</p>
+          <div class="tool-row">
+            <span class="tool-pill">Shopify</span>
+            <span class="tool-pill">Tally</span>
+            <span class="tool-pill">Shiprocket</span>
+            <span class="tool-pill">AiSensy</span>
+            <span class="tool-pill">Sheets</span>
+          </div>
+        </div>
+        <div class="solution-visual">
+          <svg viewBox="0 0 400 360" style="width: 100%;">
+            <defs>
+              <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#A47AFF" stop-opacity="0.8"/>
+                <stop offset="1" stop-color="#7B4DF6" stop-opacity="0.3"/>
+              </linearGradient>
+            </defs>
+            <line x1="200" y1="55" x2="200" y2="305" stroke="url(#lineGrad)" stroke-width="1.5"/>
+            <g>
+              <circle cx="200" cy="40" r="22" fill="rgba(123,77,246,0.2)" stroke="#A47AFF" stroke-width="1.5"/>
+              <text x="200" y="46" fill="#FAFAF7" font-size="14" text-anchor="middle" font-family="DM Sans" font-weight="500">S</text>
+              <text x="240" y="46" fill="#FAFAF7" font-size="13" font-family="DM Sans">Order placed</text>
+            </g>
+            <g>
+              <circle cx="200" cy="100" r="22" fill="rgba(123,77,246,0.2)" stroke="#A47AFF" stroke-width="1.5"/>
+              <text x="200" y="106" fill="#FAFAF7" font-size="14" text-anchor="middle" font-family="DM Sans" font-weight="500">G</text>
+              <text x="240" y="106" fill="rgba(250,250,247,0.7)" font-size="13" font-family="DM Sans">Sheet logged</text>
+            </g>
+            <g>
+              <circle cx="200" cy="160" r="22" fill="rgba(123,77,246,0.2)" stroke="#A47AFF" stroke-width="1.5"/>
+              <text x="200" y="166" fill="#FAFAF7" font-size="14" text-anchor="middle" font-family="DM Sans" font-weight="500">W</text>
+              <text x="240" y="166" fill="rgba(250,250,247,0.7)" font-size="13" font-family="DM Sans">WhatsApp sent</text>
+            </g>
+            <g>
+              <circle cx="200" cy="220" r="22" fill="rgba(123,77,246,0.2)" stroke="#A47AFF" stroke-width="1.5"/>
+              <text x="200" y="226" fill="#FAFAF7" font-size="14" text-anchor="middle" font-family="DM Sans" font-weight="500">T</text>
+              <text x="240" y="226" fill="rgba(250,250,247,0.7)" font-size="13" font-family="DM Sans">Tally invoice</text>
+            </g>
+            <g>
+              <circle cx="200" cy="290" r="28" fill="#7B4DF6"/>
+              <text x="200" y="296" fill="#FAFAF7" font-size="14" text-anchor="middle" font-family="DM Sans" font-weight="600">SR</text>
+              <text x="240" y="296" fill="#A47AFF" font-size="13" font-family="DM Sans" font-weight="500">Label printed →</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="solution-row reveal">
+        <div class="solution-meta">
+          <div class="solution-meta-num">// 02 · CART RECOVERY</div>
+          <h3>Win back the<br/>seventy percent<br/>that <em>walked away.</em></h3>
+          <p class="solution-meta-desc">Cart abandoned. Sixty minutes pass. Threxa sends a personalised WhatsApp with a one-time code. Twenty-four hours later, an email follow-up. Recovers 5–15% of revenue you'd otherwise lose.</p>
+          <div class="tool-row">
+            <span class="tool-pill">WhatsApp</span>
+            <span class="tool-pill">Email</span>
+            <span class="tool-pill">Razorpay</span>
+            <span class="tool-pill">Shopify</span>
+          </div>
+        </div>
+        <div class="solution-visual">
+          <div style="text-align: center; color: #FAFAF7;">
+            <div style="font-family: 'Fraunces', serif; font-size: 18px; color: rgba(250,250,247,0.5); margin-bottom: 16px;">recovered last month</div>
+            <div style="font-family: 'Fraunces', serif; font-weight: 350; font-size: 88px; line-height: 1; background: linear-gradient(135deg, #FAFAF7, #A47AFF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">₹47<span style="font-size:48px;color:rgba(250,250,247,0.5);">,231</span></div>
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 12px; color: rgba(164,122,255,0.8); margin-top: 24px; letter-spacing: 0.15em;">→ FROM 14 RECOVERED CARTS</div>
+            <div style="display: flex; justify-content: center; gap: 8px; margin-top: 32px;">
+              <div style="width: 6px; height: 24px; background: rgba(164,122,255,0.3); border-radius: 3px;"></div>
+              <div style="width: 6px; height: 36px; background: rgba(164,122,255,0.5); border-radius: 3px;"></div>
+              <div style="width: 6px; height: 28px; background: rgba(164,122,255,0.4); border-radius: 3px;"></div>
+              <div style="width: 6px; height: 48px; background: rgba(164,122,255,0.7); border-radius: 3px;"></div>
+              <div style="width: 6px; height: 56px; background: #A47AFF; border-radius: 3px;"></div>
+              <div style="width: 6px; height: 42px; background: rgba(164,122,255,0.6); border-radius: 3px;"></div>
+              <div style="width: 6px; height: 64px; background: #7B4DF6; border-radius: 3px;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="solution-row reveal">
+        <div class="solution-meta">
+          <div class="solution-meta-num">// 03 · REVIEWS &amp; RETENTION</div>
+          <h3>Turn one-time<br/>buyers into<br/>a <em>tribe.</em></h3>
+          <p class="solution-meta-desc">Order delivered. Three days pass. A review request goes out. Leave one — get a fifteen percent loyalty code. Thirty days later, "we miss you" with bestsellers. The retention engine that runs itself.</p>
+          <div class="tool-row">
+            <span class="tool-pill">Judge.me</span>
+            <span class="tool-pill">WhatsApp</span>
+            <span class="tool-pill">Shopify</span>
+            <span class="tool-pill">Email</span>
+          </div>
+        </div>
+        <div class="solution-visual">
+          <div style="color: #FAFAF7; padding: 12px;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: rgba(164,122,255,0.7); letter-spacing: 0.15em; margin-bottom: 24px;">// COLLECTED THIS WEEK</div>
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; margin-bottom: 12px;">
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 6px;">★★★★★</div>
+              <div style="font-size: 14px; line-height: 1.5; color: rgba(250,250,247,0.9);">"Smelled exactly like the description. Will buy again."</div>
+              <div style="font-size: 11px; color: rgba(250,250,247,0.5); margin-top: 8px;">— Verified · Aanya R.</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; margin-bottom: 12px;">
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 6px;">★★★★★</div>
+              <div style="font-size: 14px; line-height: 1.5; color: rgba(250,250,247,0.9);">"Used the code from the review request — saved ₹450"</div>
+              <div style="font-size: 11px; color: rgba(250,250,247,0.5); margin-top: 8px;">— Verified · Rohan M.</div>
+            </div>
+            <div style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px;">
+              <div style="color: #FFB800; font-size: 14px; margin-bottom: 6px;">★★★★★</div>
+              <div style="font-size: 14px; line-height: 1.5; color: rgba(250,250,247,0.9);">"Bought three more after the loyalty discount."</div>
+              <div style="font-size: 11px; color: rgba(250,250,247,0.5); margin-top: 8px;">— Verified · Kiran S.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="pricing-header reveal">
+      <div class="label-row" style="justify-content: center;">Plans</div>
+      <h2 class="display">Pay for the work.<br/>Pay for the <em>uptime.</em><br/>Nothing in between.</h2>
+      <p>No per-task fees. No surprise overages. One-time setup, monthly to keep it running, monitored, and patched.</p>
+    </div>
+
+    <div class="price-grid reveal">
+      <div class="price-card">
+        <div class="price-tier">Starter</div>
+        <div class="price-amount">₹15,000<span class="price-suffix"> setup</span></div>
+        <div class="price-monthly">+ ₹2,500/month</div>
+        <div class="price-tagline">One workflow. The cleanest start.</div>
+        <ul class="price-feats">
+          <li>1 automation workflow</li>
+          <li>WhatsApp + email support</li>
+          <li>Execution monitoring</li>
+          <li>Monthly performance email</li>
+          <li>Up to 30 orders/day</li>
+        </ul>
+        <a href="#book" class="price-cta">Start with Starter</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-badge">Most picked</div>
+        <div class="price-tier">Growth</div>
+        <div class="price-amount">₹35,000<span class="price-suffix" style="color:rgba(250,250,247,0.5);"> setup</span></div>
+        <div class="price-monthly">+ ₹5,000/month</div>
+        <div class="price-tagline">Three workflows. Where most brands land.</div>
+        <ul class="price-feats">
+          <li>3 automation workflows</li>
+          <li>WhatsApp control panel</li>
+          <li>Tally + Shiprocket integrations</li>
+          <li>Realtime failure alerts</li>
+          <li>ROI dashboard</li>
+          <li>Priority support</li>
+          <li>Up to 100 orders/day</li>
+        </ul>
+        <a href="#book" class="price-cta">Pick Growth</a>
+      </div>
+
+      <div class="price-card">
+        <div class="price-tier">Pro</div>
+        <div class="price-amount">₹75,000<span class="price-suffix"> setup</span></div>
+        <div class="price-monthly">+ ₹12,000/month</div>
+        <div class="price-tagline">Custom + multi-store. The full engine.</div>
+        <ul class="price-feats">
+          <li>Unlimited workflows</li>
+          <li>Multi-store support</li>
+          <li>Custom Indian integrations</li>
+          <li>Monthly strategy call</li>
+          <li>Dedicated build queue</li>
+          <li>SLA-backed uptime</li>
+          <li>100+ orders/day</li>
+        </ul>
+        <a href="#book" class="price-cta">Talk to founder</a>
+      </div>
+    </div>
+
+    <p class="price-note">First workflow always built free as proof of concept · Pay only when you see it work.</p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final" id="book">
+  <div class="container-narrow reveal">
+    <div class="label-row" style="justify-content: center;">Final word</div>
+    <h2 class="display">Stop doing<br/><em>data entry.</em></h2>
+    <p>Book a free fifteen-minute audit. I'll look at your current workflow, tell you what to automate first, and build the first one free. No pitch. No contract. Just see if it works.</p>
+    <a href="https://cal.com/threxa" class="btn-primary">Book the audit <span class="arrow">→</span></a>
+
+    <div class="founder">
+      <div class="founder-avatar">S</div>
+      <div>
+        <div class="founder-label">// A note from the founder</div>
+        <div class="founder-text">I've spent years watching exceptional Indian founders build remarkable brands — and then spend half their day doing work that should never require a human. Copy-pasting orders. Chasing reviews. Manually updating Tally at midnight.<br/><br/>I built Threxa because the gap between what's possible with automation and what most Indian D2C brands are actually using is enormous. The tools exist. The integrations exist. What was missing was someone who understood both the technology and the reality of running a brand in India — Shiprocket, Razorpay, Tally, AiSensy — the actual stack.<br/><br/>Every founder I've spoken to has the same story. Different product, same bottleneck. If any part of this resonates, I'd genuinely like to hear about your operation. Book a call. Show me what you're building. Let's find the hours back.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo-mark footer-lockup">
+          <div class="logo-card logo-card-footer">
+            <img src="/threxa-logo.png" alt="Threxa — Beyond Limits" class="logo-card-img" />
+          </div>
+        </a>
+        <p>Automation infrastructure for Indian D2C brands. Beyond Limits.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#solution">Workflows</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#book">Book demo</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="https://linkedin.com/company/threxa">LinkedIn</a>
+        <a href="mailto:hello@threxa.in">Email</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Threxa Labs · Bengaluru</span>
+      <span>BEYOND LIMITS.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Scroll reveals
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Nav padding shrink on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) nav.style.padding = '12px 0';
+    else nav.style.padding = '18px 0';
+  });
+</script>
+
+</body>
+</html>
