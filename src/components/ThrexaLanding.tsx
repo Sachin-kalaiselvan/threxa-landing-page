@@ -223,7 +223,7 @@ const ThrexaLanding = () => {
           <a href="#top" className="flex items-center focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-4 focus:ring-offset-secondary">
             <LogoMark compact />
           </a>
-          <div className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-secondary-foreground/62 md:flex">
+          <div className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.2em] text-violet-soft md:flex">
             <a className="transition-colors hover:text-primary" href="#problem">Problem</a>
             <a className="transition-colors hover:text-primary" href="#workflows">Workflows</a>
             <a className="transition-colors hover:text-primary" href="#pricing">Pricing</a>
