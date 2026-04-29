@@ -13,6 +13,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        sans: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -47,6 +51,25 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        cream: {
+          DEFAULT: "hsl(var(--cream))",
+          lift: "hsl(var(--cream-lift))",
+        },
+        ink: {
+          DEFAULT: "hsl(var(--ink))",
+          soft: "hsl(var(--ink-soft))",
+        },
+        space: {
+          DEFAULT: "hsl(var(--space))",
+          lift: "hsl(var(--space-lift))",
+        },
+        violet: {
+          DEFAULT: "hsl(var(--violet))",
+          soft: "hsl(var(--violet-soft))",
+        },
+        line: "hsl(var(--line))",
+        success: "hsl(var(--success))",
+        warning: "hsl(var(--warning))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -64,6 +87,18 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        float: {
+          "0%, 100%": { transform: "translate3d(0, 0, 0) rotate(0deg)" },
+          "50%": { transform: "translate3d(0, -12px, 0) rotate(1deg)" },
+        },
+        orbit: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
+        reveal: {
+          from: { opacity: "0", transform: "translateY(18px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -82,8 +117,19 @@ export default {
         },
       },
       animation: {
+        float: "float 7s ease-in-out infinite",
+        orbit: "orbit 16s linear infinite",
+        reveal: "reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) both",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        "brand-gradient": "var(--gradient-brand)",
+        "panel-gradient": "var(--gradient-panel)",
+      },
+      boxShadow: {
+        panel: "var(--shadow-panel)",
+        violet: "var(--shadow-violet)",
       },
     },
   },
