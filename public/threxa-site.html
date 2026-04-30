@@ -1259,6 +1259,115 @@
   </div>
 </footer>
 
+<!-- LEGAL MODAL -->
+<div class="legal-overlay" id="legalOverlay" role="dialog" aria-modal="true" aria-labelledby="legalTitle">
+  <div class="legal-modal">
+    <div class="legal-head">
+      <h3 id="legalTitle">Legal</h3>
+      <button class="legal-close" id="legalClose" aria-label="Close">×</button>
+    </div>
+    <div class="legal-tabs">
+      <button class="legal-tab active" data-tab="terms">Terms of Service</button>
+      <button class="legal-tab" data-tab="refund">Refund Policy</button>
+      <button class="legal-tab" data-tab="privacy">Privacy Policy</button>
+    </div>
+    <div class="legal-body">
+      <div class="legal-pane active" data-pane="terms">
+        <h4>1. Terms of Service</h4>
+        <h5>1.1 Overview</h5>
+        <p>These Terms govern services provided by <strong>The Ingredient List</strong> ("Company", "we", "us"). By purchasing our services, you ("Client") agree to these Terms.</p>
+        <h5>1.2 Scope of Services</h5>
+        <p>We provide automation, integration, and operational workflow setup for eCommerce businesses, including:</p>
+        <ul><li>Store automation</li><li>Messaging workflows (e.g., WhatsApp)</li><li>Order and logistics automation</li><li>Third-party integrations</li></ul>
+        <p>Any work outside agreed scope will be charged additionally.</p>
+        <h5>1.3 Setup &amp; Subscription</h5>
+        <ul><li>Setup fee = one-time implementation cost</li><li>Monthly fee = hosting, monitoring, maintenance, and support</li></ul>
+        <p>All payments are non-transferable.</p>
+        <h5>1.4 Client Responsibilities</h5>
+        <ul><li>Provide correct credentials and timely access</li><li>Maintain active accounts with required platforms</li><li>Ensure lawful use of messaging (especially WhatsApp)</li><li>Not misuse or reverse-engineer systems</li></ul>
+        <h5>1.5 Third-Party Dependencies</h5>
+        <p>Our services rely on Shopify, Shiprocket, Tally, and messaging providers (e.g., WhatsApp APIs). We are not responsible for downtime, API failures, policy changes, or account bans/restrictions.</p>
+        <h5>1.6 Payment Terms</h5>
+        <ul><li>Setup fees: 100% upfront</li><li>Monthly fees: billed in advance</li><li>Late payments may result in suspension without notice</li></ul>
+        <h5>1.7 Chargebacks &amp; Payment Disputes</h5>
+        <p>Any chargeback or payment dispute raised without prior communication will be considered a breach of contract. We reserve the right to suspend all services, deny future service, and recover costs via legal means.</p>
+        <h5>1.8 Termination</h5>
+        <ul><li>Either party may terminate with 7 days' notice</li><li>No refunds for current billing cycle</li><li>Access may be revoked upon termination</li></ul>
+        <h5>1.9 Service Level &amp; Support</h5>
+        <ul><li>No guaranteed uptime</li><li>No real-time support unless agreed</li><li>Standard support response: 24–48 hours</li></ul>
+        <h5>1.10 No Performance Guarantee</h5>
+        <p>We do <strong>not</strong> guarantee revenue increase, ROI, or business outcomes. Results depend on market conditions, customer behavior, and client operations.</p>
+        <h5>1.11 Limitation of Liability</h5>
+        <p>To the fullest extent allowed by law, total liability is limited to fees paid in the last 30 days. We are not liable for loss of profits, business loss, data loss, or indirect damages.</p>
+        <h5>1.12 Indemnification</h5>
+        <p>Client agrees to indemnify and hold us harmless against legal claims, platform violations (e.g., WhatsApp spam), misuse of automation, and regulatory non-compliance.</p>
+        <h5>1.13 Intellectual Property</h5>
+        <p>All systems, automation logic, and frameworks remain our property. Client is granted limited usage rights only.</p>
+        <h5>1.14 Data &amp; Access</h5>
+        <ul><li>Client is responsible for data accuracy</li><li>We are not liable for incorrect data inputs</li><li>Client must revoke access after termination</li></ul>
+        <h5>1.15 Force Majeure</h5>
+        <p>We are not liable for delays or failures due to natural disasters, internet outages, government actions, or platform disruptions.</p>
+        <h5>1.16 Governing Law</h5>
+        <p>These Terms are governed by the laws of India. Jurisdiction shall be exclusively in the courts of Bangalore, Karnataka, India.</p>
+      </div>
+
+      <div class="legal-pane" data-pane="refund">
+        <h4>2. Refund Policy</h4>
+        <h5>2.1 Setup Fees</h5>
+        <p>Non-refundable once work has started.</p>
+        <h5>2.2 Monthly Fees</h5>
+        <p>Non-refundable once billing cycle begins.</p>
+        <h5>2.3 No Partial Refunds</h5>
+        <p>No refunds for unused services or early termination.</p>
+        <h5>2.4 Limited Exception</h5>
+        <p>Refund only if work has not started <em>and</em> the delay is solely from our side (beyond 7 days).</p>
+      </div>
+
+      <div class="legal-pane" data-pane="privacy">
+        <h4>3. Privacy Policy</h4>
+        <h5>3.1 Data Collection</h5>
+        <p>We may collect contact details, business data, system credentials (as required), and usage data.</p>
+        <h5>3.2 Data Usage</h5>
+        <p>We use data to deliver services, improve automation, and provide support.</p>
+        <h5>3.3 Data Sharing</h5>
+        <p>We do not sell data. We may share data with required service providers for operations.</p>
+        <h5>3.4 Data Security</h5>
+        <p>We implement reasonable safeguards, but no system is 100% secure.</p>
+        <h5>3.5 Third-Party Responsibility</h5>
+        <p>Third-party platforms have their own policies. We are not responsible for their handling of your data.</p>
+        <h5>3.6 Data Requests</h5>
+        <p>You may request data access, corrections, or deletion.</p>
+        <h5>3.7 Contact</h5>
+        <p>📧 <a href="mailto:theingredientlist.co@gmail.com">theingredientlist.co@gmail.com</a><br/>🏢 The Ingredient List</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- THREXA CHATBOT -->
+<div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-label="Threxa assistant">
+  <div class="chatbot-head">
+    <img src="/threxa-logo.png" alt="Threxa" />
+    <div>
+      <div class="ch-title">Threxa Assistant</div>
+      <div class="ch-sub">Beyond Limits</div>
+    </div>
+  </div>
+  <div class="chatbot-body">
+    <p>Hi 👋 Got a question about automation, pricing, or onboarding?</p>
+    <p>Reach out and we'll get back within 24–48 hours.</p>
+    <div class="chatbot-actions">
+      <a href="mailto:theingredientlist.co@gmail.com?subject=Threxa%20enquiry">📧 Email us<span>→</span></a>
+      <a class="alt" href="https://www.linkedin.com/company/threxa" target="_blank" rel="noopener">💼 LinkedIn<span>→</span></a>
+      <a class="alt" href="#book">📅 Book a demo<span>→</span></a>
+    </div>
+  </div>
+  <div class="chatbot-foot">Avg. reply · 24–48h</div>
+</div>
+<button class="chatbot-launcher" id="chatbotLauncher" aria-label="Open Threxa assistant">
+  <img src="/threxa-logo.png" alt="Threxa" />
+</button>
+
 <script>
   // Scroll reveals
   const observer = new IntersectionObserver((entries) => {
