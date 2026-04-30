@@ -735,23 +735,39 @@
     padding: 20px 28px; border-bottom: 1px solid rgba(10,10,15,0.08);
   }
   .legal-head h3 {
-    font-family: 'Fraunces', serif; font-weight: 400; font-size: 22px;
-    letter-spacing: -0.02em;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 600; font-size: 18px;
+    letter-spacing: -0.01em;
   }
   .legal-tabs { display: flex; gap: 4px; padding: 12px 20px; border-bottom: 1px solid rgba(10,10,15,0.06); flex-wrap: wrap; }
   .legal-tab {
-    font-family: 'JetBrains Mono', monospace; font-size: 11px;
-    letter-spacing: 0.14em; text-transform: uppercase;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 0; text-transform: none;
     padding: 8px 14px; border-radius: 999px; cursor: pointer;
     background: transparent; color: rgba(10,10,15,0.6); border: 1px solid transparent;
   }
   .legal-tab.active { background: #0A0A0F; color: #FAFAF7; }
-  .legal-body { padding: 24px 28px 32px; overflow-y: auto; font-size: 14.5px; line-height: 1.65; }
-  .legal-body h4 { font-family: 'Fraunces', serif; font-weight: 400; font-size: 18px; margin: 22px 0 8px; letter-spacing: -0.01em; }
-  .legal-body h5 { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(10,10,15,0.55); margin: 18px 0 6px; }
+  .legal-body {
+    padding: 24px 28px 32px; overflow-y: auto;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 14.5px; line-height: 1.7;
+    color: rgba(10,10,15,0.82);
+  }
+  .legal-body h4 {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 600; font-size: 17px;
+    margin: 4px 0 14px; letter-spacing: -0.01em; color: #0A0A0F;
+  }
+  .legal-body h5 {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 600; font-size: 13.5px;
+    letter-spacing: 0; text-transform: none;
+    color: #0A0A0F; margin: 20px 0 6px;
+  }
   .legal-body p, .legal-body li { color: rgba(10,10,15,0.78); }
   .legal-body ul { padding-left: 20px; margin: 6px 0 10px; }
-  .legal-body strong { color: #0A0A0F; }
+  .legal-body strong { color: #0A0A0F; font-weight: 600; }
   .legal-close {
     background: transparent; border: none; cursor: pointer;
     font-size: 22px; color: rgba(10,10,15,0.6); width: 36px; height: 36px;
