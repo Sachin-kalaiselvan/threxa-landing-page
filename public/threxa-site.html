@@ -7,7 +7,7 @@
 <meta name="description" content="Workflow automation infrastructure for Indian D2C brands. Stop doing data entry. Start counting the money." />
 <meta property="og:title" content="Threxa — Beyond Limits" />
 <meta property="og:description" content="Workflow automation infrastructure for Indian D2C brands." />
-<link rel="icon" type="image/png" href="/threxa-logo.png" />
+<link rel="icon" type="image/png" href="/threxa-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=DM+Sans:opsz,wght@9..40,300..700&family=JetBrains+Mono:wght@400;500&family=Saira:wght@200;300;400;500&display=swap" rel="stylesheet">
@@ -735,23 +735,39 @@
     padding: 20px 28px; border-bottom: 1px solid rgba(10,10,15,0.08);
   }
   .legal-head h3 {
-    font-family: 'Fraunces', serif; font-weight: 400; font-size: 22px;
-    letter-spacing: -0.02em;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 600; font-size: 18px;
+    letter-spacing: -0.01em;
   }
   .legal-tabs { display: flex; gap: 4px; padding: 12px 20px; border-bottom: 1px solid rgba(10,10,15,0.06); flex-wrap: wrap; }
   .legal-tab {
-    font-family: 'JetBrains Mono', monospace; font-size: 11px;
-    letter-spacing: 0.14em; text-transform: uppercase;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 13px; font-weight: 500;
+    letter-spacing: 0; text-transform: none;
     padding: 8px 14px; border-radius: 999px; cursor: pointer;
     background: transparent; color: rgba(10,10,15,0.6); border: 1px solid transparent;
   }
   .legal-tab.active { background: #0A0A0F; color: #FAFAF7; }
-  .legal-body { padding: 24px 28px 32px; overflow-y: auto; font-size: 14.5px; line-height: 1.65; }
-  .legal-body h4 { font-family: 'Fraunces', serif; font-weight: 400; font-size: 18px; margin: 22px 0 8px; letter-spacing: -0.01em; }
-  .legal-body h5 { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(10,10,15,0.55); margin: 18px 0 6px; }
+  .legal-body {
+    padding: 24px 28px 32px; overflow-y: auto;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 14.5px; line-height: 1.7;
+    color: rgba(10,10,15,0.82);
+  }
+  .legal-body h4 {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 600; font-size: 17px;
+    margin: 4px 0 14px; letter-spacing: -0.01em; color: #0A0A0F;
+  }
+  .legal-body h5 {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 600; font-size: 13.5px;
+    letter-spacing: 0; text-transform: none;
+    color: #0A0A0F; margin: 20px 0 6px;
+  }
   .legal-body p, .legal-body li { color: rgba(10,10,15,0.78); }
   .legal-body ul { padding-left: 20px; margin: 6px 0 10px; }
-  .legal-body strong { color: #0A0A0F; }
+  .legal-body strong { color: #0A0A0F; font-weight: 600; }
   .legal-close {
     background: transparent; border: none; cursor: pointer;
     font-size: 22px; color: rgba(10,10,15,0.6); width: 36px; height: 36px;
@@ -772,7 +788,7 @@
     transition: transform 0.2s ease;
   }
   .chatbot-launcher:hover { transform: translateY(-2px) scale(1.04); }
-  .chatbot-launcher img { width: 34px; height: 34px; object-fit: contain; }
+  .chatbot-launcher img { width: 42px; height: 42px; object-fit: contain; display: block; }
   .chatbot-panel {
     position: fixed; right: 24px; bottom: 96px; z-index: 901;
     width: 340px; max-width: calc(100vw - 32px);
@@ -788,9 +804,8 @@
     background: #0A0A0F; color: #FAFAF7;
     padding: 16px 18px; display: flex; align-items: center; gap: 12px;
   }
-  .chatbot-head img { width: 30px; height: 30px; object-fit: contain; background: #FAFAF7; border-radius: 8px; padding: 4px; }
-  .chatbot-head .ch-title { font-family: 'Fraunces', serif; font-size: 16px; }
-  .chatbot-head .ch-sub { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,250,247,0.55); }
+  .chatbot-head img { width: 34px; height: 34px; object-fit: contain; }
+  .chatbot-head .ch-title { font-family: 'DM Sans', system-ui, sans-serif; font-weight: 600; font-size: 15px; letter-spacing: -0.005em; }
   .chatbot-body { padding: 18px; font-size: 14px; line-height: 1.55; overflow-y: auto; }
   .chatbot-body p { color: rgba(10,10,15,0.78); margin-bottom: 10px; }
   .chatbot-actions { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
@@ -1347,10 +1362,9 @@
 <!-- THREXA CHATBOT -->
 <div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-label="Threxa assistant">
   <div class="chatbot-head">
-    <img src="/threxa-logo.png" alt="Threxa" />
+    <img src="/threxa-icon.png" alt="Threxa" />
     <div>
       <div class="ch-title">Threxa Assistant</div>
-      <div class="ch-sub">Beyond Limits</div>
     </div>
   </div>
   <div class="chatbot-body">
@@ -1365,7 +1379,7 @@
   <div class="chatbot-foot">Avg. reply · 24–48h</div>
 </div>
 <button class="chatbot-launcher" id="chatbotLauncher" aria-label="Open Threxa assistant">
-  <img src="/threxa-logo.png" alt="Threxa" />
+  <img src="/threxa-icon.png" alt="Threxa" />
 </button>
 
 <script>
