@@ -788,7 +788,7 @@
     transition: transform 0.2s ease;
   }
   .chatbot-launcher:hover { transform: translateY(-2px) scale(1.04); }
-  .chatbot-launcher img { width: 34px; height: 34px; object-fit: contain; }
+  .chatbot-launcher img { width: 42px; height: 42px; object-fit: contain; display: block; }
   .chatbot-panel {
     position: fixed; right: 24px; bottom: 96px; z-index: 901;
     width: 340px; max-width: calc(100vw - 32px);
@@ -804,9 +804,8 @@
     background: #0A0A0F; color: #FAFAF7;
     padding: 16px 18px; display: flex; align-items: center; gap: 12px;
   }
-  .chatbot-head img { width: 30px; height: 30px; object-fit: contain; background: #FAFAF7; border-radius: 8px; padding: 4px; }
-  .chatbot-head .ch-title { font-family: 'Fraunces', serif; font-size: 16px; }
-  .chatbot-head .ch-sub { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,250,247,0.55); }
+  .chatbot-head img { width: 34px; height: 34px; object-fit: contain; }
+  .chatbot-head .ch-title { font-family: 'DM Sans', system-ui, sans-serif; font-weight: 600; font-size: 15px; letter-spacing: -0.005em; }
   .chatbot-body { padding: 18px; font-size: 14px; line-height: 1.55; overflow-y: auto; }
   .chatbot-body p { color: rgba(10,10,15,0.78); margin-bottom: 10px; }
   .chatbot-actions { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
@@ -1363,10 +1362,9 @@
 <!-- THREXA CHATBOT -->
 <div class="chatbot-panel" id="chatbotPanel" role="dialog" aria-label="Threxa assistant">
   <div class="chatbot-head">
-    <img src="/threxa-logo.png" alt="Threxa" />
+    <img src="/threxa-icon.png" alt="Threxa" />
     <div>
       <div class="ch-title">Threxa Assistant</div>
-      <div class="ch-sub">Beyond Limits</div>
     </div>
   </div>
   <div class="chatbot-body">
@@ -1381,7 +1379,7 @@
   <div class="chatbot-foot">Avg. reply · 24–48h</div>
 </div>
 <button class="chatbot-launcher" id="chatbotLauncher" aria-label="Open Threxa assistant">
-  <img src="/threxa-logo.png" alt="Threxa" />
+  <img src="/threxa-icon.png" alt="Threxa" />
 </button>
 
 <script>
