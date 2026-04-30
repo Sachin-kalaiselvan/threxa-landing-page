@@ -1381,6 +1381,42 @@
     if (window.scrollY > 50) nav.style.padding = '12px 0';
     else nav.style.padding = '18px 0';
   });
+
+  // Legal modal
+  const legalOverlay = document.getElementById('legalOverlay');
+  const legalClose = document.getElementById('legalClose');
+  const legalTabs = document.querySelectorAll('.legal-tab');
+  const legalPanes = document.querySelectorAll('.legal-pane');
+  function openLegal(tab) {
+    legalTabs.forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+    legalPanes.forEach(p => p.classList.toggle('active', p.dataset.pane === tab));
+    legalOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLegal() {
+    legalOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-legal]').forEach(a => {
+    a.addEventListener('click', (e) => { e.preventDefault(); openLegal(a.dataset.legal); });
+  });
+  legalTabs.forEach(t => t.addEventListener('click', () => openLegal(t.dataset.tab)));
+  legalClose.addEventListener('click', closeLegal);
+  legalOverlay.addEventListener('click', (e) => { if (e.target === legalOverlay) closeLegal(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLegal(); });
+
+  // Chatbot
+  const chatLauncher = document.getElementById('chatbotLauncher');
+  const chatPanel = document.getElementById('chatbotPanel');
+  chatLauncher.addEventListener('click', (e) => {
+    e.stopPropagation();
+    chatPanel.classList.toggle('open');
+  });
+  document.addEventListener('click', (e) => {
+    if (!chatPanel.contains(e.target) && !chatLauncher.contains(e.target)) {
+      chatPanel.classList.remove('open');
+    }
+  });
 </script>
 
 </body>
