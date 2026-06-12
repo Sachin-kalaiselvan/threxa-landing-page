@@ -1,8 +1,9 @@
-import { ArrowRight, Check, MessageCircle, PackageCheck, RefreshCcw, ShoppingCart, Sparkles, Star } from "lucide-react";
+import { ArrowRight, Check, MessageCircle, PackageCheck, RefreshCcw, ShoppingCart, Sparkles, Star, Linkedin, Mail } from "lucide-react";
 import threxaLogo from "@/assets/threxa-logo.png";
 
 const CAL = "https://cal.com/threxa/threxa-free-audit";
 const WA  = "https://wa.me/917483992418?text=Hi%20Sachin%2C%20I%27d%20like%20to%20book%20a%20free%20Threxa%20audit.";
+const EMAIL = "sachin@theingredientlist.co";
 
 const painPoints = [
   {
@@ -22,7 +23,7 @@ const painPoints = [
   {
     number: "03",
     title: "The reviews you need never arrive.",
-    copy: "Eighty percent of D2C purchases happen because of reviews. Yours get collected because no one has the bandwidth to ask. Your best customers stay anonymous.",
+    copy: "Eighty percent of D2C purchases happen because of reviews. Yours never get collected because no one has the bandwidth to ask. Your best customers stay anonymous.",
     visual: "reviews",
     tag: "review request · after ship",
   },
@@ -279,7 +280,7 @@ const ThrexaLanding = () => {
               Most D2C founders are <span className="font-display-italic text-primary">drowning</span> in work that should be invisible.
             </h2>
             <p className="mx-auto mt-7 max-w-md text-sm leading-7 text-muted-foreground">
-              Threxa turns a day on tasks that look like "not thinking creative, nothing strategic" — just human attention to keep the lights on.
+              Threxa eliminates the tasks that eat your day — the ones that look like work but aren't strategy.
             </p>
           </div>
           <div className="space-y-16 md:space-y-20">
@@ -341,6 +342,7 @@ const ThrexaLanding = () => {
               No per-task fees. No surprise overages. One-time setup, monthly to keep it running, monitored, and patched.
             </p>
           </div>
+          <p className="mb-8 text-center text-sm font-semibold text-primary">First workflow always built from a proof-of-concept. Pay only when you see it work.</p>
           <div className="grid gap-4 md:grid-cols-3">
             {plans.map((plan) => (
               <article key={plan.name} className={plan.highlighted ? "relative rounded-lg bg-secondary p-6 text-secondary-foreground shadow-panel ring-1 ring-violet-soft/25" : "rounded-lg bg-card p-6 text-card-foreground shadow-violet ring-1 ring-line"}>
@@ -366,13 +368,12 @@ const ThrexaLanding = () => {
               </article>
             ))}
           </div>
-          <p className="mt-9 text-center text-xs text-muted-foreground">First workflow always built from a proof-of-concept. Pay only when you see it work.</p>
         </div>
       </section>
 
       <section id="final" className="border-y border-line bg-card/45 py-28 text-center md:py-36">
         <div className="mx-auto max-w-3xl px-5">
-          <p className="mb-5 text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-primary">// final word</p>
+          <p className="mb-5 text-[0.62rem] font-semibold uppercase tracking-[0.28em] text-primary">// book your free audit</p>
           <h2 className="font-display text-6xl leading-[0.88] md:text-8xl">
             Stop doing<br /><span className="font-display-italic text-primary">data entry.</span>
           </h2>
@@ -408,7 +409,7 @@ const ThrexaLanding = () => {
               <p className="font-semibold uppercase tracking-[0.18em] text-foreground">Company</p>
               <a href="https://theingredientlist.co" target="_blank" rel="noreferrer" className="block hover:text-foreground transition-colors">Studio</a>
               <a href="https://linkedin.com/in/sachinjk11" target="_blank" rel="noreferrer" className="block hover:text-foreground transition-colors">LinkedIn</a>
-              <a href={`mailto:sachin@theingredientlist.co`} className="block hover:text-foreground transition-colors">Email</a>
+              <a href={`mailto:${EMAIL}`} className="block hover:text-foreground transition-colors">Email</a>
             </div>
             <div className="space-y-2">
               <p className="font-semibold uppercase tracking-[0.18em] text-foreground">Legal</p>
